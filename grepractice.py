@@ -1,11 +1,13 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 import os, random
 
 def editmode():
     with open("data.txt", "a") as f:
-        new_word = raw_input("Please enter the new word: \t")
+        #new_word = raw_input("Please enter the new word: \t")
+        new_word = input("Please enter the new word: \t")
         new_word = new_word.upper()
-        new_def  = raw_input("Please enter a definition: \t")
+        #new_def  = raw_input("Please enter a definition: \t")
+        new_def  = input("Please enter a definition: \t")
         new_def = new_def.lower()
         ### here, we need to open the vocabulary list and make a new entry ###
         f.write("{0}, {1}, \n".format(new_word, new_def))  
@@ -43,7 +45,8 @@ def GREPractice():
         print("Press 1 to enter flashcard practice.")
         print("Press 2 to edit the vocabulary database.")
         print("Press anything else to leave the script.\n")
-        mode = raw_input("Please enter the desired mode: \t")
+        #mode = raw_input("Please enter the desired mode: \t")
+        mode = input("Please enter the desired mode: \t")
         mode = str(mode)
         if mode   == '1':
             print("\nEntering practice mode.\n")
@@ -54,7 +57,8 @@ def GREPractice():
             	w = str(w)
             	d = str(d)
             	d = d.split(" ", 1)[1]
-            	answer = raw_input("Your answer: \t Definition ")
+            	#answer = raw_input("Your answer: \t Definition ")
+            	answer = input("Your answer: \t Definition ")
             	if answer.lower() == "exit":
             		continue_test = False
             	elif answer.lower() == w:
@@ -70,7 +74,8 @@ def GREPractice():
                 editmode()
                 request_invalid = True
                 while request_invalid:
-                    cont = raw_input("\nWould you like to add a new word? \n Y/N: \t")
+                    #cont = raw_input("\nWould you like to add a new word? \n Y/N: \t")
+                    cont = input("\nWould you like to add a new word? \n Y/N: \t")
                     if cont.lower() == "y":
                         request_invalid = False                    
                     elif cont.lower() =="n":
