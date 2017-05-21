@@ -4,7 +4,9 @@ import os, random
 def editmode():
     with open("data.txt", "a") as f:
         new_word = raw_input("Please enter the new word: \t")
-        new_def  = raw_input("Please enter a one word definition: \t")
+        new_word = new_word.upper()
+        new_def  = raw_input("Please enter a definition: \t")
+        new_def = new_def.lower()
         ### here, we need to open the vocabulary list and make a new entry ###
         f.write("{0}, {1}, \n".format(new_word, new_def))  
            
