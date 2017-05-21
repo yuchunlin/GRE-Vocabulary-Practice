@@ -3,8 +3,8 @@ import os, random
 
 def editmode():
     with open("data.txt", "a") as f:
-        new_word = input("Please enter the new word: \t")
-        new_def  = input("Please enter a one word definition: \t")
+        new_word = raw_input("Please enter the new word: \t")
+        new_def  = raw_input("Please enter a one word definition: \t")
         ### here, we need to open the vocabulary list and make a new entry ###
         f.write("{0}, {1}, \n".format(new_word, new_def))  
            
@@ -15,7 +15,7 @@ def GREPractice():
         print("Press 1 to enter flashcard practice.")
         print("Press 2 to edit the vocabulary databse.")
         print("Press anything else to leave the script.")
-        mode = input("Please enter the desired mode: ")
+        mode = raw_input("Please enter the desired mode: ")
         mode = str(mode)
         if mode   == '1':
             print("Entering practice mode.")
@@ -26,7 +26,7 @@ def GREPractice():
                 editmode()
                 request_invalid = True
                 while request_invalid:
-                    cont = input("Would you like to add a new word? \n Y/N: \t")
+                    cont = raw_input("Would you like to add a new word? \n Y/N: \t")
                     if cont.lower() == "y":
                         request_invalid = False                    
                     elif cont.lower() =="n":
