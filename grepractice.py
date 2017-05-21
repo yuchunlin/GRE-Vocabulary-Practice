@@ -9,18 +9,48 @@ def editmode():
         new_def = new_def.lower()
         ### here, we need to open the vocabulary list and make a new entry ###
         f.write("{0}, {1}, \n".format(new_word, new_def))  
-           
+
+
+def generatequestion():
+     with open("data.txt", "r") as f:
+     	word_definition_pairs = [line.split(",") for line in f]
+     	rand_option = random.randint(0, len(word_definition_pairs) - 1)
+     	word = word_definition_pairs[rand_option][0]
+     	definition = word_definition_pairs[rand_option][1]
+     	possible_answers = []
+     	possible_answers.append(definition)
+     	for i in range(0, 4):
+     		elem = word_definition_pairs[random.randint(0, len(word_definition_pairs) - 1)][1]
+     		while elem in possible_answers:
+     			elem = word_definition_pairs[random.randint(0, len(word_definition_pairs) - 1)][1]
+     		possible_answers.append(elem)
+     	print("The word is:\t" + word)
+     	for j in range(1, len(possible_answers)): 
+     		choice = random.choice(possible_answers)
+     		possible_answers.remove(choice)
+     		print("" + j + ":\t" + choice)
+
+
+
 def GREPractice():
     not_exit = True
     while not_exit:
-        print("Welcome to the GRE Practice Script.")
+        print("\n\nWelcome to the GRE Practice Script.\n\n")
         print("Press 1 to enter flashcard practice.")
         print("Press 2 to edit the vocabulary databse.")
-        print("Press anything else to leave the script.")
-        mode = raw_input("Please enter the desired mode: ")
+        print("Press anything else to leave the script.\n")
+        mode = raw_input("Please enter the desired mode: \t")
         mode = str(mode)
         if mode   == '1':
             print("Entering practice mode.")
+            print("Please select the correct definition, or type exit to return to the main menu.")
+            continue_test = True
+            while continue_test:
+            	generatequestion()
+            	answer = raw_input("Your answer: \t Definition ")
+            	if answer.lower() == "exit":
+            		continue_test = False
+
         elif mode == '2':
             print("Entering edit mode.")
             edit_requested = True
