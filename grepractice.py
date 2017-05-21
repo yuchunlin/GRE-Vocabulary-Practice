@@ -37,7 +37,7 @@ def GREPractice():
     while not_exit:
         print("\n\nWelcome to the GRE Practice Script.\n\n")
         print("Press 1 to enter flashcard practice.")
-        print("Press 2 to edit the vocabulary databse.")
+        print("Press 2 to edit the vocabulary database.")
         print("Press anything else to leave the script.\n")
         mode = raw_input("Please enter the desired mode: \t")
         mode = str(mode)
@@ -58,7 +58,7 @@ def GREPractice():
                 editmode()
                 request_invalid = True
                 while request_invalid:
-                    cont = raw_input("Would you like to add a new word? \n Y/N: \t")
+                    cont = raw_input("\nWould you like to add a new word? \n Y/N: \t")
                     if cont.lower() == "y":
                         request_invalid = False                    
                     elif cont.lower() =="n":
