@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 import os, random
+#from termcolor import colored
+#rom colors import color
 
 def editmode():
     with open("data.txt", "a") as f:
@@ -45,12 +47,13 @@ def GREPractice():
         print("Press 1 to enter flashcard practice.")
         print("Press 2 to edit the vocabulary database.")
         print("Press anything else to leave the script.\n")
-        #mode = raw_input("Please enter the desired mode: \t")
         mode = input("Please enter the desired mode: \t")
         mode = str(mode)
         if mode   == '1':
             print("\nEntering practice mode.\n")
             print("Please select the correct definition, or type exit to return to the main menu.\n")
+            num_correct = 0
+            num_total   = 0
             continue_test = True
             while continue_test:
             	(w, d) = generatequestion()
@@ -60,12 +63,18 @@ def GREPractice():
             	#answer = raw_input("Your answer: \t Definition ")
             	answer = input("Your answer: \t Definition ")
             	if answer.lower() == "exit":
+            		print("\n\nYou correctly answered " + str(num_correct) + " out of " + str(num_total) + ".")
+            		accuracy = "{0:.2f}".format((num_correct/num_total) * 100)
+            		print("Your vocabulary accuracy is " + accuracy + "%.")           		
             		continue_test = False
             	elif answer.lower() == w:
             		print("Correct!\n")
+            		num_correct+=1
+            		num_total+=1
             	else:
             		quotes = '"'
             		print("Incorrect. The correct answer is " + quotes + d + quotes + ".\n")
+            		num_total+=1
 
         elif mode == '2':
             print("\nEntering edit mode. \n")
