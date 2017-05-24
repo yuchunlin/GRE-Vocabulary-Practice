@@ -4,7 +4,7 @@ import os, random
 #rom colors import color
 
 def editmode():
-    with open("data.txt", "a") as f:
+    with open("manhattanprep.txt", "a") as f:
         #new_word = raw_input("Please enter the new word: \t")
         new_word = input("Please enter the new word: \t")
         new_word = new_word.upper()
@@ -12,7 +12,7 @@ def editmode():
         new_def  = input("Please enter a definition: \t")
         new_def = new_def.lower()
         ### here, we need to open the vocabulary list and make a new entry ###
-        f.write("{0}, {1}, \n".format(new_word, new_def))  
+        f.write("{0}, {1} \n".format(new_word, new_def))  
 
 
 def generatequestion():

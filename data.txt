@@ -74,3 +74,36 @@ VERACITY, truthfulness,
 VIRULENT, hostile or antagonistic, 
 VORACIOUS, insatiable , 
 WAVER, to be unsettled in opinion, 
+APPORTION, allocate 
+CASTIGATE, severely reprimand 
+LASCIVIOUS, lewd 
+PRESCIENT, prophetic 
+PRETERNATURAL, extraordinary 
+PITHY, concise 
+LIONIZE, venerate 
+INDEMNIFY, compensate 
+ACTUARY, business professional dealing with risk analysis 
+QUOTIDIAN, ordinary 
+VICISSITUDE, downturn 
+ASKANCE, suspiciously 
+APOLOGIST, defender of an unpopular opinion 
+IMPROVIDENT, lacking foresight 
+DISSOLUTE, lacking morals 
+INIMICAL, hostile 
+IMPECUNIOUS, poor 
+QUIXOTIC, unrealistic and impractical 
+GRANDILOQUENT, extravagant 
+MENDACIOUSLY, deceitfully 
+INSOUCIANT, untroubled 
+HOMILY, sermon 
+MAUDLIN, sentimental 
+PRESAE, sign or a warning 
+FECUND, fertile or ripe 
+CHARY, cautious or suspicious 
+TREMULOUS, timid or nervous 
+CONCOMITANT, naturally accompanying 
+OBSEQUIOUS, obedient to a servile degree 
+EVANESCENT, disappearing or fading quickly 
+PECCADILLOES, small offenses or sins 
+VERDANT, relating to trees; or young and fresh 
+MOTLEY, assorted 
