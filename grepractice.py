@@ -38,6 +38,23 @@ def generatequestion():
      		print("" + str(j) + ":\t" + choice)
      	return (correct_choice, definition)
 
+def find(x):
+    srch=str(x)
+    x=urllib2.urlopen("http://dictionary.reference.com/browse/"+srch+"?s=t")
+    x=x.read()
+    items=re.findall('<meta name="description" content="'+".*$",x,re.MULTILINE)
+    for x in items:
+        y=x.replace('<meta name="description" content="','')
+        z=y.replace(' See more."/>','')
+        m=re.findall('at Dictionary.com, a free online dictionary with pronunciation,              synonyms and translation. Look it up now! "/>',z)
+        if m==[]:
+            if z.startswith("Get your reference question answered by Ask.com"):
+                print "Word not found! :("
+            else:
+                print z
+    else:
+            print "Word not found! :("
+
 
 
 def GREPractice():
@@ -46,6 +63,7 @@ def GREPractice():
         print("\n\nWelcome to the GRE Practice Script.\n\n")
         print("Press 1 to enter flashcard practice.")
         print("Press 2 to edit the vocabulary database.")
+        print("Press e to enter the lookup script.")
         print("Press anything else to leave the script.\n")
         mode = input("Please enter the desired mode: \t")
         mode = str(mode)
@@ -93,6 +111,9 @@ def GREPractice():
                     else:
                         print("I'm sorry, that is not a valid option.")                
             print("Returning to main menu.")
+        elif mode == '3':
+        	lookup = raw_input("What word would you like to define?: \t")
+        	find(lookup)
         else:
             not_exit = False
             print("Exiting program.")
