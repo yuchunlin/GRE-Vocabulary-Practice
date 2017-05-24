@@ -4,15 +4,15 @@ import os, random
 #rom colors import color
 
 def editmode():
-    with open("manhattanprep.txt", "a") as f:
+    with open("data.txt", "a") as f:
         #new_word = raw_input("Please enter the new word: \t")
-        new_word = input("Please enter the new word: \t")
+        new_word = raw_input("Please enter the new word: \t")
         new_word = new_word.upper()
         #new_def  = raw_input("Please enter a definition: \t")
-        new_def  = input("Please enter a definition: \t")
+        new_def  = raw_input("Please enter a definition: \t")
         new_def = new_def.lower()
         ### here, we need to open the vocabulary list and make a new entry ###
-        f.write("{0}, {1} \n".format(new_word, new_def))  
+        f.write("{0}, {1}, \n".format(new_word, new_def))  
 
 
 def generatequestion():
@@ -38,40 +38,20 @@ def generatequestion():
      		print("" + str(j) + ":\t" + choice)
      	return (correct_choice, definition)
 
-def find(x):
-    srch=str(x)
-    x=urllib2.urlopen("http://dictionary.reference.com/browse/"+srch+"?s=t")
-    x=x.read()
-    items=re.findall('<meta name="description" content="'+".*$",x,re.MULTILINE)
-    for x in items:
-        y=x.replace('<meta name="description" content="','')
-        z=y.replace(' See more."/>','')
-        m=re.findall('at Dictionary.com, a free online dictionary with pronunciation,              synonyms and translation. Look it up now! "/>',z)
-        if m==[]:
-            if z.startswith("Get your reference question answered by Ask.com"):
-                print "Word not found! :("
-            else:
-                print z
-    else:
-            print "Word not found! :("
-
-
-
 def GREPractice():
     not_exit = True
     while not_exit:
         print("\n\nWelcome to the GRE Practice Script.\n\n")
         print("Press 1 to enter flashcard practice.")
         print("Press 2 to edit the vocabulary database.")
-        print("Press e to enter the lookup script.")
         print("Press anything else to leave the script.\n")
-        mode = input("Please enter the desired mode: \t")
+        mode = raw_input("Please enter the desired mode: \t")
         mode = str(mode)
         if mode   == '1':
             print("\nEntering practice mode.\n")
             print("Please select the correct definition, or type exit to return to the main menu.\n")
-            num_correct = 0
-            num_total   = 0
+            num_correct = float(0)
+            num_total   = float(0)
             continue_test = True
             while continue_test:
             	(w, d) = generatequestion()
@@ -79,7 +59,11 @@ def GREPractice():
             	d = str(d)
             	d = d.split(" ", 1)[1]
             	#answer = raw_input("Your answer: \t Definition ")
-            	answer = input("Your answer: \t Definition ")
+            	answer = raw_input("Your answer: \t Definition ")
+            	acceptable_answers = ['1', '2', '3', '4', '5', 'exit']
+            	while answer not in acceptable_answers:
+            		print("\nThat is not an answer option. Please select a numbered answer, or type 'exit' to exit.\n")
+            		answer = str(raw_input("Your answer:\t"))
             	if answer.lower() == "exit":
             		print("\n\nYou correctly answered " + str(num_correct) + " out of " + str(num_total) + ".")
             		accuracy = "{0:.2f}".format((num_correct/num_total) * 100)
@@ -102,7 +86,7 @@ def GREPractice():
                 request_invalid = True
                 while request_invalid:
                     #cont = raw_input("\nWould you like to add a new word? \n Y/N: \t")
-                    cont = input("\nWould you like to add a new word? \n Y/N: \t")
+                    cont = raw_input("\nWould you like to add a new word? \n Y/N: \t")
                     if cont.lower() == "y":
                         request_invalid = False                    
                     elif cont.lower() =="n":
@@ -111,9 +95,6 @@ def GREPractice():
                     else:
                         print("I'm sorry, that is not a valid option.")                
             print("Returning to main menu.")
-        elif mode == '3':
-        	lookup = raw_input("What word would you like to define?: \t")
-        	find(lookup)
         else:
             not_exit = False
             print("Exiting program.")
