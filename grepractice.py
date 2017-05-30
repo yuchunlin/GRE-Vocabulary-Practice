@@ -4,7 +4,7 @@ import os, random
 #rom colors import color
 
 def editmode():
-    with open("data.txt", "a") as f:
+    with open("manhattanprep.txt", "a") as f:
         #new_word = raw_input("Please enter the new word: \t")
         new_word = raw_input("Please enter the new word: \t")
         new_word = new_word.upper()

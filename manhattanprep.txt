@@ -1,35 +1,87 @@
-APPORTION, allocate 
-CASTIGATE, severely reprimand 
-LASCIVIOUS, lewd 
-PRESCIENT, prophetic 
-PRETERNATURAL, extraordinary 
-PITHY, concise 
-LIONIZE, venerate 
-INDEMNIFY, compensate 
-ACTUARY, business professional dealing with risk analysis 
-QUOTIDIAN, ordinary 
-VICISSITUDE, downturn 
-ASKANCE, suspiciously 
-APOLOGIST, defender of an unpopular opinion 
-IMPROVIDENT, lacking foresight 
-DISSOLUTE, lacking morals 
-INIMICAL, hostile 
-IMPECUNIOUS, poor 
-QUIXOTIC, unrealistic and impractical 
-GRANDILOQUENT, extravagant 
-MENDACIOUSLY, deceitfully 
-INSOUCIANT, untroubled 
-HOMILY, sermon 
-MAUDLIN, sentimental 
-PRESAE, sign or a warning 
-FECUND, fertile or ripe 
-CHARY, cautious or suspicious 
-TREMULOUS, timid or nervous 
-CONCOMITANT, naturally accompanying 
-OBSEQUIOUS, obedient to a servile degree 
-EVANESCENT, disappearing or fading quickly 
-PECCADILLOES, small offenses or sins 
-VERDANT, relating to trees; or young and fresh 
-MOTLEY, assorted 
-MINUTIAE, small or trivial detail 
-ANTEDILUVIAN, old-fashioned or antiquated, 
+APPORTION, allocate, 
+CASTIGATE, severely reprimand, 
+LASCIVIOUS, lewd, 
+PRESCIENT, prophetic, 
+PRETERNATURAL, extraordinary, 
+PITHY, concise, 
+LIONIZE, venerate, 
+INDEMNIFY, compensate, 
+ACTUARY, business professional dealing with risk analysis, 
+QUOTIDIAN, ordinary, 
+VICISSITUDE, downturn, 
+ASKANCE, suspiciously, 
+APOLOGIST, defender of an unpopular opinion, 
+IMPROVIDENT, lacking foresight, 
+DISSOLUTE, lacking morals, 
+INIMICAL, hostile, 
+IMPECUNIOUS, poor, 
+QUIXOTIC, unrealistic and impractical, 
+GRANDILOQUENT, extravagant, 
+MENDACIOUSLY, deceitfully, 
+INSOUCIANT, untroubled, 
+HOMILY, sermon, 
+MAUDLIN, sentimental, 
+PRESAE, sign or a warning,
+FECUND, fertile or ripe, 
+CHARY, cautious or suspicious,
+TREMULOUS, timid or nervous, 
+CONCOMITANT, naturally accompanying, 
+OBSEQUIOUS, obedient to a servile degree, 
+EVANESCENT, disappearing or fading quickly,  
+PECCADILLOES, small offenses or sins, 
+VERDANT, relating to trees; or young and fresh, 
+MOTLEY, assorted, 
+APPORTIONED, divide and allocate, 
+CASTIGATED, severely reprimand, 
+LASCIVIOUS, offensive sexual desire, 
+PRETERNATURAL, beyond what is normal, 
+PITHY, concise and forcefully expressive, 
+LIONIZE, treat as a celebrity, 
+QUOTIDIAN, mundane, 
+IMPROVIDENT, thoughtless, 
+INIMICAL, hostile, 
+IMPECUNIOUS, poor, 
+INSOUCIANCE, indifference, 
+MAUDLIN, sentimental, usually drunkenly, 
+CONSANGUINEOUS, ancestrally related, 
+CHARY, wary, 
+SYCOPHANT, flatterer, 
+POLEMICAL, strongly critical, 
+EXCORIATION, abrasion, 
+CALUMNIES, false and slanderous statements, 
+GARLANDS, wreath of flowers, 
+OBLOQUIES, abusive detractive language, 
+ARTIFICE, trickery, 
+PULCHRITUDE, beauty, 
+PARSIMONY, miserly, 
+TEPID, showing little enthusiasm, 
+INDOLENCE, laziness, 
+PROBITY, integrity, 
+PROFLIGATE, wasteful or degenerate, 
+ANTEDILUVIAN, old fashioned, 
+ASCETIC, abstinent, 
+INUNDATE, overwhelm or flood, 
+CAPRICIOUS, fickle, 
+DESULTORY, lacking a purpose, 
+SEMIOTIC, relating to the study of symbols, 
+PROVIDENTIAL, opportune, 
+INTREPID, dauntless, 
+SANGFROID, composure, 
+EFFETE, ineffectual, 
+ABSTRUSE, obscure, 
+HALYCON, idyllic and peaceful, 
+DIFFIDENT, modest or shy, 
+SARTORIAL, relating to tailoring or styling of dress, 
+SCINTILLATING, shining or sparkling, 
+FECKLESS, irresponsible, 
+PILLORY, attack or ridicule publicly, 
+PUNCTILIOUS, strict adherence to rules, 
+PANACHE, grand or flamboyant, 
+DUPLICITY, deceitfulness, 
+TOUCHSTONE, standard or criterion, 
+STANCHION, frame forming a support, 
+VITRIEOUS, glasslike, 
+INCHOATE, rudimentary or not fully developed, 
+INTERLOCUTOR, person who takes part in a conversation, 
+AVANT-GARDE, unorthodox, 
+ 
